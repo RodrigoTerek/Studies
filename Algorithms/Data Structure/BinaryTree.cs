@@ -8,41 +8,41 @@ namespace Algorithms.Data_Structure
     {
         public BinaryTreeNode<T> Root { get; set; }
 
-        public void Add(T value)
-        {
-            BinaryTreeNode<T> aux = this.Root;
+        //public void Add(T value)
+        //{
+        //    BinaryTreeNode<T> aux = this.Root;
 
-            while (true)
-            {
-                if (aux.Value.CompareTo(value) == 0) // value <= aux
-                {
-                    throw new Exception("Value already exist in tree");
-                }
-                else if (aux.Value.CompareTo(value) > 0) // value < aux
-                {
-                    if (aux.Left != null)
-                    {
-                        aux = aux.Left;
-                    }
-                    else
-                    {
-                        aux.Left = new BinaryTreeNode<T>(value);
-                        break;
-                    }
-                }
-                else // value > aux
-                {
+        //    while (true)
+        //    {
+        //        if (aux.Value.CompareTo(value) == 0) // value <= aux
+        //        {
+        //            throw new Exception("Value already exist in tree");
+        //        }
+        //        else if (aux.Value.CompareTo(value) > 0) // value < aux
+        //        {
+        //            if (aux.Left != null)
+        //            {
+        //                aux = aux.Left;
+        //            }
+        //            else
+        //            {
+        //                aux.Left = new BinaryTreeNode<T>(value);
+        //                break;
+        //            }
+        //        }
+        //        else // value > aux
+        //        {
 
 
-                }
-            }
+        //        }
+        //    }
 
-        }
+        //}
 
-        public void Remove(T value)
-        {
+        //public void Remove(T value)
+        //{
 
-        }
+        //}
 
         public void PrePrint()
         {
